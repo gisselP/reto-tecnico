@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<body>
+    <app-aside></app-aside>
+    <section class="students-section">
+        <header>
+            <h1>Estudiantes</h1>
+            <div class="input-box"><input type="search" name="" id=""><i class="fas fa-search"></i></div>
+            <p>Número de participantes: 28</p>
+        </header>
+
+        <main class="students-container">
+            <section class="students-cards" *ngFor="let user of data">
+                <div class="container-userInfo">
+                    <div class="container-userPhoto">
+                        <img src="../../../assets/default-user.png"  class="profile-userPhoto">
+                    </div>
+                    <h2> {{user.name}}</h2>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span> {{user.email}} </span>
+                </div>
+                <p class="box-url">
+                    <a href="#" class="url-info">Ver historial de notas e inasistencias</a>
+                </p>
+            </section>
+        </main>
+    </section>
+</body>

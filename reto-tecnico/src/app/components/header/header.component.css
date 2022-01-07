@@ -1,0 +1,33 @@
+header{
+    background-color: rgba(0, 0, 0, 1);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+.logo{
+    width: 100px;
+}
+.user-info{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:30px;
+    cursor: pointer;
+}
+i{
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media screen and (max-width:550px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        gap:15px;
+        height: 100px;
+    }
+}

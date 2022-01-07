@@ -1,0 +1,35 @@
+aside{
+    width: 200px;
+    height: 100%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px;
+    padding-top: 30px;
+}
+i{
+    width: 10px;
+}
+li{
+    color: #7F8794;
+    list-style: none;
+    padding:0 20px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px
+}
+li:hover{
+    color:rgba(114, 42, 233, 1);
+    cursor: pointer;
+}
+@media screen and (max-width:550px) {
+    aside{
+        width: 50px;
+    }
+    span{
+        display: none;
+    }
+}
